@@ -1,0 +1,8 @@
+.story p + p {
+  margin-top: var(--space-3);
+}
+
+.story {
+  max-width: 680px;
+  color: var(--color-text-muted);
+}
