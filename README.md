@@ -8,8 +8,12 @@ React 19 + Vite + TypeScript 회사 홈페이지. 사이트맵은 Company / Plat
 npm install
 npm run dev        # http://localhost:5173
 npm run typecheck  # 타입 검사 (build 는 타입을 보지 않습니다)
-npm run build      # dist/ 생성
+npm run build      # dist/ 생성 (서버 배포용)
+npm run build:single  # dist-single/tissnexus-homepage.html — 파일 하나로 공유용
 ```
+
+`build:single` 은 이미지까지 모두 넣은 HTML 한 파일(약 2.5MB)을 만듭니다. 더블클릭으로 열리고, 파일로 열기 때문에
+주소는 `tissnexus-homepage.html#/ko/assays/liver` 처럼 `#` 뒤에 붙습니다. 서버 배포에는 쓰지 않습니다.
 
 ## 콘텐츠 수정
 

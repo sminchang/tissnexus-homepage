@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate, RouterProvider } from "react-router";
+import { createBrowserRouter, createHashRouter, Navigate, RouterProvider } from "react-router";
 import { ErrorPage, SiteLayout } from "./shared/components";
 import { detectLang } from "./shared/i18n";
 import { assaysRoutes } from "./assays";
@@ -11,7 +11,10 @@ import { platformRoutes } from "./platform";
 
 // 모든 페이지는 /ko/... 또는 /en/... 아래에 있습니다.
 // 각 feature 가 자기 라우트를 내보내고, 여기서 언어 셸 아래에 모읍니다.
-const router = createBrowserRouter([
+// 단일 HTML 파일 빌드는 file:// 로 열리므로 주소를 # 뒤에 둡니다 (…html#/ko/assays/liver).
+const createRouter = import.meta.env.MODE === "single" ? createHashRouter : createBrowserRouter;
+
+const router = createRouter([
   { path: "/", element: <LanguageRedirect /> },
   {
     path: ":lang",
