@@ -5,3 +5,7 @@ dist
 .env
 .env.*
 !.env.example
+
+# 시안 원본(대용량)과 윈도우 다운로드 부가 파일
+docs/*.pptx
+*:Zone.Identifier

@@ -1,2 +1,2 @@
-export { company, navigation } from "./company";
-export type { CompanyProfile, CompanyContact } from "./company";
+export { company, siteMap } from "./company";
+export type { CompanyProfile, CompanyContact, NavGroup, NavItem } from "./company";

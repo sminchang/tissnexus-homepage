@@ -1,13 +1,23 @@
-/* 디자인 토큰. 브랜드 컬러가 정해지면 --color-accent 계열만 교체하면 됩니다. */
+/* 디자인 토큰. 시안(docs/홈페이지.pptx)의 네이비·블루·틸 톤에서 뽑았습니다. */
 :root {
   --color-bg: #ffffff;
-  --color-surface: #f6f7f9;
-  --color-border: #e3e6ea;
-  --color-text: #14181d;
-  --color-text-muted: #5b6672;
-  --color-accent: #1f6feb; /* TODO: 브랜드 컬러 확정 시 교체 */
-  --color-accent-hover: #1a5ed1;
+  --color-surface: #f3f7fc;
+  --color-surface-strong: #e8f0fa;
+  --color-card: rgba(255, 255, 255, 0.82);
+  --color-border: #dde7f3;
+  --color-text: #0b1d45;
+  --color-text-body: #33415c;
+  --color-text-muted: #6a7890;
+  --color-accent: #1565d8;
+  --color-accent-hover: #0f52b5;
+  --color-accent-soft: #e6f0fd;
   --color-accent-contrast: #ffffff;
+  --color-teal: #11a3b4;
+  --color-navy: #0d2a6b;
+
+  /* 헤드라인 강조 문구의 블루→틸 그라데이션 */
+  --gradient-accent: linear-gradient(90deg, #1565d8 0%, #1487d0 55%, #11a3b4 100%);
+  --gradient-flow: linear-gradient(90deg, #0d2a6b 0%, #1565d8 50%, #11a3b4 100%);
 
   --space-1: 4px;
   --space-2: 8px;
@@ -17,18 +27,24 @@
   --space-6: 64px;
   --space-7: 96px;
 
-  --radius-sm: 6px;
-  --radius-md: 10px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
 
-  --font-sans: "Pretendard", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --shadow-card: 0 8px 28px rgba(19, 60, 130, 0.08);
 
+  --font-sans: "Pretendard Variable", "Pretendard", system-ui, -apple-system, "Segoe UI",
+    Roboto, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+
+  --text-xs: 0.75rem;
   --text-sm: 0.875rem;
   --text-base: 1rem;
-  --text-lg: 1.25rem;
-  --text-xl: 1.75rem;
-  --text-2xl: 2.5rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-2xl: clamp(1.75rem, 3.2vw, 2.5rem);
+  --text-display: clamp(2.25rem, 5.2vw, 4.25rem);
 
-  --layout-max: 1120px;
-  --header-height: 64px;
+  --layout-max: 1280px;
+  --header-height: 76px;
 }

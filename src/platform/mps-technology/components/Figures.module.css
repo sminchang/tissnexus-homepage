@@ -1,0 +1,278 @@
+/* 카드 미디어 영역은 --media-h 높이 하나로 맞춥니다 (MediaCardGrid.module.css 에서 지정). */
+
+/* ── 원형 수치 ── */
+.statWrap {
+  height: var(--media-h);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat {
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 40% 35%, #ffffff 0%, #dcebfd 100%);
+  box-shadow: inset 0 0 0 5px rgba(21, 101, 216, 0.14), 0 8px 20px rgba(21, 101, 216, 0.14);
+}
+
+.stat strong {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.stat span {
+  margin-top: 4px;
+  max-width: 80%;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-text);
+}
+
+/* ── 생존율 선 그래프 ── */
+.chart {
+  height: var(--media-h);
+  margin: 0;
+  padding: 4px 6px;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-sm);
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+}
+
+.chart svg {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  display: block;
+}
+
+.grid {
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.tick {
+  font-size: 8px;
+  fill: var(--color-text-muted);
+}
+
+.lineDynamic,
+.lineStatic {
+  fill: none;
+  stroke-width: 2;
+}
+
+.lineDynamic {
+  stroke: var(--color-accent);
+}
+
+.lineStatic {
+  stroke: #9aa6b8;
+}
+
+.dotDynamic {
+  fill: var(--color-accent);
+}
+
+.dotStatic {
+  fill: #9aa6b8;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 10px;
+  font-size: 10.5px;
+  line-height: 1.4;
+  color: var(--color-text-body);
+}
+
+.legend [data-series]::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.legend [data-series="dynamic"]::before {
+  background: var(--color-accent);
+}
+
+.legend [data-series="static"]::before {
+  background: #9aa6b8;
+}
+
+/* ── 파라미터 ── */
+.params {
+  height: var(--media-h);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 8px;
+}
+
+.params img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.params ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 3px;
+}
+
+.params li {
+  padding: 1px 7px;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent-soft);
+  font-size: 10.5px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+/* ── 장기 썸네일 ── */
+.organs {
+  height: var(--media-h);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.organs li {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--color-surface-strong);
+}
+
+.organs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.organs span {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 1px 0;
+  background: rgba(255, 255, 255, 0.82);
+  font-size: 10.5px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-text);
+}
+
+/* ── 개발 기간 비교 ── */
+.timeline {
+  height: var(--media-h);
+  min-width: 0;
+  margin: 0;
+  display: grid;
+  align-content: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  line-height: 1.3;
+}
+
+.stages {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  font-size: 10.5px;
+  color: var(--color-text-body);
+  border-bottom: 1px dashed var(--color-border);
+  padding-bottom: 3px;
+}
+
+.bar {
+  padding: 2px 10px;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);
+}
+
+.bar[data-kind="mps"] {
+  width: 72%;
+  background: linear-gradient(90deg, #3d8bff, var(--color-accent));
+}
+
+.bar[data-kind="conventional"] {
+  width: 98%;
+  background: #9aa6b8;
+}
+
+.timeline figcaption {
+  justify-self: end;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-navy);
+}
+
+/* ── 성공률 막대 ── */
+.bars {
+  height: var(--media-h);
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--space-5);
+  padding: 4px var(--space-3) 4px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.barCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text-body);
+  text-align: center;
+}
+
+.barCol strong {
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+}
+
+.barFill {
+  width: 36px;
+  border-radius: 4px 4px 0 0;
+}
+
+.barFill[data-kind="conventional"] {
+  height: 16px;
+  background: #b8c3d4;
+}
+
+.barFill[data-kind="mps"] {
+  height: 34px;
+  background: linear-gradient(180deg, #3d8bff, var(--color-accent));
+}

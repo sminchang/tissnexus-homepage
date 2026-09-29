@@ -2,14 +2,18 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-2);
-  padding: var(--space-3) var(--space-4);
+  gap: 10px;
+  padding: 14px 28px;
   border: 1px solid transparent;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-pill);
   font: inherit;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-1px);
 }
 
 .button:disabled {
@@ -18,20 +22,17 @@
 }
 
 .primary {
-  background: var(--color-accent);
+  background: linear-gradient(90deg, var(--color-navy) 0%, var(--color-accent) 100%);
   color: var(--color-accent-contrast);
-}
-
-.primary:hover:not(:disabled) {
-  background: var(--color-accent-hover);
+  box-shadow: 0 8px 20px rgba(21, 101, 216, 0.25);
 }
 
 .secondary {
-  background: transparent;
-  color: var(--color-text);
-  border-color: var(--color-border);
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--color-navy);
+  border-color: var(--color-navy);
 }
 
 .secondary:hover:not(:disabled) {
-  border-color: var(--color-text-muted);
+  background: #ffffff;
 }

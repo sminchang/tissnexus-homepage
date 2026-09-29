@@ -1,0 +1,44 @@
+.caption {
+  text-align: center;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--color-accent);
+}
+
+.caption:lang(ko) {
+  letter-spacing: 0.04em;
+}
+
+.asideText {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-left: 2px solid var(--color-accent);
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  color: var(--color-text-body);
+}
+
+/*
+ * 한 화면에 맞추기 위한 카드 압축. 공용 CardGrid 의 클래스 이름은 해시라서
+ * 구조(li > 카드)와 data-shape 속성으로 잡습니다.
+ */
+.compactCards li > * {
+  padding: var(--space-3) var(--space-4);
+  gap: 10px;
+}
+
+.compactCards [data-shape="circle"] {
+  width: 104px;
+}
+
+.compactCards h3 {
+  font-size: var(--text-base);
+}
+
+.compactCards p,
+.compactCards li li {
+  font-size: var(--text-sm);
+  line-height: 1.55;
+}

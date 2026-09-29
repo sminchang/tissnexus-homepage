@@ -1,0 +1,78 @@
+/* 연결 시스템 도식 (DenseSection 오른쪽 칸) */
+.diagram {
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 62%, transparent 100%);
+  mask-image: radial-gradient(ellipse at center, #000 62%, transparent 100%);
+}
+
+/* 오른쪽 칸 사진: 가장자리를 배경으로 흐립니다 */
+.visual {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 58%, transparent 100%);
+  mask-image: radial-gradient(ellipse at center, #000 58%, transparent 100%);
+}
+
+/* 카드가 두 줄인 섹션은 사진을 낮춰 한 화면에 맞춥니다 */
+.short {
+  max-height: 160px;
+}
+
+.flow {
+  padding-top: var(--space-2);
+}
+
+/* 사업 적용 분야: 오른쪽 칸에 사진 + R&D 밸류체인 (시안 24번 하단) */
+.solutionsAside {
+  display: grid;
+  gap: 12px;
+}
+
+.valueChain {
+  padding: 10px 0 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.valueLabel {
+  margin-bottom: 8px;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.valueLabel:lang(ko) {
+  letter-spacing: 0.06em;
+}
+
+.valueList {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px var(--space-3);
+}
+
+.valueList li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-text);
+}
+
+.valueList svg {
+  flex: none;
+  color: var(--color-accent);
+}
+
+@media (max-width: 560px) {
+  .valueList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

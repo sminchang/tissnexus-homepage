@@ -1,6 +1,6 @@
 # TissNexus Homepage
 
-React 19 + Vite + TypeScript 회사 홈페이지. 페이지는 Home / 회사소개 / 서비스 / 문의 4개입니다.
+React 19 + Vite + TypeScript 회사 홈페이지. 사이트맵은 Company / Platform / Assays / Partnership / News / Contact 입니다.
 
 ## 실행
 
@@ -11,17 +11,30 @@ npm run typecheck  # 타입 검사 (build 는 타입을 보지 않습니다)
 npm run build      # dist/ 생성
 ```
 
-## 회사 정보 채우기
+## 콘텐츠 수정
 
-내용은 전부 코드가 아니라 데이터 파일에 있습니다. 아래 5개 파일의 `TODO` 만 채우면 화면이 완성됩니다.
+디자인은 `docs/홈페이지.pptx` 시안(이미지로 된 슬라이드)을 HTML/CSS 로 옮긴 것입니다.
+문구는 코드가 아니라 각 페이지의 `content.ts` 에 있으므로 문구만 바꿀 때는 그 파일만 고치면 됩니다.
 
-| 파일 | 채울 내용 |
-|------|-----------|
-| `src/shared/config/company.ts` | 사명·태그라인·헤드라인·연락처·사업자번호 (헤더/푸터/문의에 공통 반영) |
-| `src/home/content.ts` | 홈 강점 3가지, 숫자 지표 |
-| `src/about/content.ts` | 미션, 회사 스토리, 핵심가치, 연혁 |
-| `src/services/content.ts` | 서비스 목록, 진행 단계 |
-| `src/shared/styles/tokens.css` | 브랜드 컬러 (`--color-accent` 계열) |
+| 파일 | 내용 |
+|------|------|
+| `src/shared/config/company.ts` | 법인명·연락처·사업자번호(`TODO`), 전역 메뉴(사이트맵). 언어별로 나뉘어 있습니다 |
+| `src/**/content.ts` | 페이지별 문구. `ko` / `en` 두 벌이 있고, 제목의 `*강조*` 는 블루·틸 그라데이션, `\n` 은 줄바꿈 |
+| `src/shared/styles/tokens.css` | 색상·간격·폰트 토큰 |
+| `public/images/` | 이미지. 현재는 시안에서 잘라낸 **임시 이미지**라 해상도가 낮고 일부에 시안 글자가 남아 있습니다 |
+
+### 다국어 (KO / EN)
+
+- 모든 주소에 언어가 붙습니다: `/ko/platform/humimic`, `/en/platform/humimic`.
+- `/` 로 들어오면 저장된 선택 → 브라우저 언어 순으로 `/ko` 또는 `/en` 으로 보냅니다. 언어가 빠진 옛 주소도 언어를 붙여 보냅니다.
+- `content.ts` 는 `const en: typeof ko` 로 두 언어의 구조가 같아야 타입 검사를 통과합니다. 한쪽에만 항목을 추가하면 `npm run typecheck` 가 알려 줍니다.
+- 콘텐츠 안의 링크는 언어 없이 `"/contact"` 처럼 적습니다. 화면에 그릴 때 현재 언어가 붙습니다.
+
+### 풀페이지 스크롤
+
+데스크톱(901px 이상)에서는 각 섹션이 한 화면을 차지하고 휠·키보드 한 번에 한 섹션씩 넘어갑니다
+(`src/shared/hooks/useFullPageWheel.ts`). 섹션이 화면보다 길면 그 안을 스크롤한 뒤 넘어가므로,
+문구를 늘릴 때는 1440×900 에서 섹션이 한 화면(824px)을 넘지 않는지 확인하세요. 모바일은 일반 스크롤입니다.
 
 ## 문의 폼
 
@@ -79,11 +92,14 @@ sudo nginx -t && sudo systemctl reload nginx
 
 ```
 src/
-├── shared/        # 공용 커널 — UI 컴포넌트, api 래퍼, 회사 정보, 토큰
-├── home/          # feature 단위. 각자 components/, content.ts, pages.tsx, index.tsx
-├── about/
-├── services/
-├── contact/       # api.ts + hooks/ 포함
+├── shared/        # 공용 커널 — 섹션 컴포넌트, 헤더·푸터, i18n, 설정, 토큰
+├── home/          # Company Overview (홈)
+├── company/       # CEO, Vision & Mission
+├── platform/      # HUMIMIC® Platform, MPS Technology, Workflow
+├── assays/        # Liver, Bone Marrow, Lung, Multi-organ, Custom Assay
+├── partnership/   # CRO Service, Co-development (시안 없음 — 준비 중 페이지)
+├── news/          # 시안 없음 — 준비 중 페이지
+├── contact/       # 문의 폼 (api.ts + hooks/)
 └── App.tsx        # 각 feature 의 라우트를 모아 레이아웃 아래에 배치
 ```
 

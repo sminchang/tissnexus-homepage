@@ -1,0 +1,130 @@
+/*
+ * 압축 섹션. 데스크톱 풀페이지 스크롤에서는 전역 규칙(:root main > section)이
+ * 높이·세로 가운데 정렬·여백을 맡고, 여기서는 배경과 내부 배치만 다룹니다.
+ */
+.section {
+  padding: var(--space-6) 0;
+  background: linear-gradient(180deg, #ffffff 0%, var(--color-surface) 100%);
+  overflow: hidden;
+}
+
+.section + .section {
+  border-top: 1px solid var(--color-border);
+}
+
+.inner {
+  display: grid;
+  gap: 14px;
+}
+
+/* ── 헤더: 제목 | 본문 | 이미지 ── */
+.head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr) minmax(0, 0.8fr);
+  gap: var(--space-4);
+  align-items: end;
+}
+
+.head[data-has-image="false"] {
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1.8fr);
+}
+
+.titleBlock > div:first-child {
+  margin-bottom: 8px;
+}
+
+.kicker {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-text-body);
+  margin-bottom: 4px;
+}
+
+.kicker:lang(ko) {
+  text-transform: none;
+  letter-spacing: 0.12em;
+  font-size: 12px;
+}
+
+.title {
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+}
+
+.lead {
+  margin-top: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.body {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-body);
+}
+
+/* 이미지가 헤더 높이를 늘리지 않도록 절대 위치로 채웁니다 (높이는 제목·본문이 정함) */
+.media {
+  position: relative;
+  align-self: stretch;
+  min-height: 150px;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 22%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 22%);
+}
+
+.media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.groupLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: -6px;
+}
+
+.groupLabel:lang(ko) {
+  text-transform: none;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+}
+
+@media (max-width: 1100px) {
+  .head,
+  .head[data-has-image="false"] {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .media {
+    grid-column: 1 / -1;
+    height: 200px;
+  }
+}
+
+@media (max-width: 760px) {
+  .head,
+  .head[data-has-image="false"] {
+    grid-template-columns: 1fr;
+  }
+
+  .media {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}

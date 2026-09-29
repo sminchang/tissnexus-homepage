@@ -1,0 +1,85 @@
+.section {
+  position: relative;
+  padding: var(--space-6) 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, var(--color-surface) 100%);
+  border-top: 1px solid var(--color-border);
+}
+
+.inner {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.top {
+  display: grid;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.top[data-has-aside="true"] {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.text > :global(div:first-child) {
+  margin-bottom: var(--space-2);
+}
+
+.kicker {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--color-text-body);
+  margin-bottom: 6px;
+}
+
+.kicker:lang(ko) {
+  letter-spacing: 0.12em;
+}
+
+/* Hero 보다 한 단계 작은 제목으로 세로 공간을 아낍니다 */
+.title {
+  font-size: clamp(1.75rem, 3vw, 2.625rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+.lead {
+  margin-top: var(--space-2);
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--color-text);
+}
+
+.body {
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-body);
+}
+
+.extra {
+  margin-top: var(--space-3);
+}
+
+.aside {
+  min-width: 0;
+}
+
+.below {
+  display: grid;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.below > * {
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .top[data-has-aside="true"] {
+    grid-template-columns: 1fr;
+  }
+}

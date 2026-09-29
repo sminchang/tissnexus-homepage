@@ -1,13 +1,12 @@
 import { Section } from "../shared/components";
+import { useLocalized } from "../shared/i18n";
 import { ContactForm } from "./components/ContactForm";
+import { content } from "./content";
 
 export function ContactPage() {
+  const c = useLocalized(content);
   return (
-    <Section
-      eyebrow="Contact"
-      title="문의하기"
-      description="TODO: 어떤 문의를 환영하는지, 회신까지 얼마나 걸리는지 적어두면 전환율이 올라갑니다."
-    >
+    <Section eyebrow={{ label: c.eyebrow }} title={c.title} lead={c.lead}>
       <ContactForm />
     </Section>
   );

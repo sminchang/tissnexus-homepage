@@ -1,11 +1,16 @@
 import type { FormEvent } from "react";
 import { Button } from "../../shared/components";
 import { company } from "../../shared/config";
+import { useLang } from "../../shared/i18n";
+import { content } from "../content";
 import { useContactForm } from "../hooks/useContactForm";
 import styles from "./ContactForm.module.css";
 
 export function ContactForm() {
   const { values, state, setField, submit } = useContactForm();
+  const lang = useLang();
+  const t = content[lang].form;
+  const contact = company[lang].contact;
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -17,7 +22,7 @@ export function ContactForm() {
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.field}>
           <label className={styles.label} htmlFor="name">
-            이름
+            {t.name}
           </label>
           <input
             id="name"
@@ -30,7 +35,7 @@ export function ContactForm() {
 
         <div className={styles.field}>
           <label className={styles.label} htmlFor="email">
-            이메일
+            {t.email}
           </label>
           <input
             id="email"
@@ -44,7 +49,7 @@ export function ContactForm() {
 
         <div className={styles.field}>
           <label className={styles.label} htmlFor="company">
-            회사명
+            {t.company}
           </label>
           <input
             id="company"
@@ -56,7 +61,7 @@ export function ContactForm() {
 
         <div className={styles.field}>
           <label className={styles.label} htmlFor="message">
-            문의 내용
+            {t.message}
           </label>
           <textarea
             id="message"
@@ -69,13 +74,13 @@ export function ContactForm() {
 
         <div>
           <Button type="submit" disabled={state.status === "submitting"}>
-            {state.status === "submitting" ? "전송 중..." : "문의 보내기"}
+            {state.status === "submitting" ? t.submitting : t.submit}
           </Button>
         </div>
 
         {state.status === "success" && (
           <p className={styles.status} data-tone="success" role="status">
-            문의가 접수되었습니다. 빠르게 회신드리겠습니다.
+            {t.success}
           </p>
         )}
         {state.status === "error" && (
@@ -87,16 +92,16 @@ export function ContactForm() {
 
       <aside className={styles.info}>
         <div>
-          <div className={styles.infoLabel}>이메일</div>
-          <div>{company.contact.email}</div>
+          <div className={styles.infoLabel}>{t.email}</div>
+          <div>{contact.email}</div>
         </div>
         <div>
-          <div className={styles.infoLabel}>전화</div>
-          <div>{company.contact.phone}</div>
+          <div className={styles.infoLabel}>{t.phone}</div>
+          <div>{contact.phone}</div>
         </div>
         <div>
-          <div className={styles.infoLabel}>주소</div>
-          <div>{company.contact.address}</div>
+          <div className={styles.infoLabel}>{t.address}</div>
+          <div>{contact.address}</div>
         </div>
       </aside>
     </div>

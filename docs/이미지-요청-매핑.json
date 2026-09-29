@@ -1,0 +1,950 @@
+{
+ "S03-1": {
+  "file": "public/images/home/hero.webp",
+  "kind": "req",
+  "what": "메인 비주얼 (칩 속 오가노이드)",
+  "slide": 3,
+  "box": [
+   860,
+   300,
+   612,
+   641
+  ]
+ },
+ "S04-1": {
+  "file": "public/images/home/who.webp",
+  "kind": "req",
+  "what": "오른쪽 아래 오가노이드",
+  "slide": 4,
+  "box": [
+   960,
+   520,
+   520,
+   421
+  ]
+ },
+ "S06-1": {
+  "file": "public/images/home/assays-chip.webp",
+  "kind": "req",
+  "what": "오른쪽 위 MPS 칩",
+  "slide": 6,
+  "box": [
+   930,
+   70,
+   480,
+   350
+  ]
+ },
+ "S06-2": {
+  "file": "public/images/home/assay-liver.webp",
+  "kind": "opt",
+  "what": "카드 이미지: 간",
+  "slide": 6,
+  "box": [
+   73,
+   420,
+   370,
+   176
+  ]
+ },
+ "S06-3": {
+  "file": "public/images/home/assay-bone-marrow.webp",
+  "kind": "opt",
+  "what": "카드 이미지: 골수",
+  "slide": 6,
+  "box": [
+   467,
+   420,
+   360,
+   176
+  ]
+ },
+ "S06-4": {
+  "file": "public/images/home/assay-lung.webp",
+  "kind": "opt",
+  "what": "카드 이미지: 폐",
+  "slide": 6,
+  "box": [
+   848,
+   420,
+   361,
+   176
+  ]
+ },
+ "S06-5": {
+  "file": "public/images/home/assay-multi-organ.webp",
+  "kind": "opt",
+  "what": "카드 이미지: 다장기",
+  "slide": 6,
+  "box": [
+   1233,
+   420,
+   369,
+   176
+  ]
+ },
+ "S07-1": {
+  "file": "public/images/home/why-relevance.webp",
+  "kind": "opt",
+  "what": "원형 이미지 01",
+  "slide": 7,
+  "box": [
+   440,
+   330,
+   236,
+   236
+  ]
+ },
+ "S07-2": {
+  "file": "public/images/home/why-dynamic.webp",
+  "kind": "opt",
+  "what": "원형 이미지 02",
+  "slide": 7,
+  "box": [
+   749,
+   330,
+   238,
+   236
+  ]
+ },
+ "S07-3": {
+  "file": "public/images/home/why-connected.webp",
+  "kind": "opt",
+  "what": "원형 이미지 03",
+  "slide": 7,
+  "box": [
+   1057,
+   330,
+   238,
+   236
+  ]
+ },
+ "S07-4": {
+  "file": "public/images/home/why-predictive.webp",
+  "kind": "opt",
+  "what": "원형 이미지 04",
+  "slide": 7,
+  "box": [
+   1368,
+   330,
+   236,
+   236
+  ]
+ },
+ "S08-1": {
+  "file": "public/images/home/tiss-nexus.webp",
+  "kind": "req",
+  "what": "TISSUE × NEXUS 두 원",
+  "slide": 8,
+  "box": [
+   455,
+   130,
+   915,
+   480
+  ]
+ },
+ "S09-1": {
+  "file": "public/images/home/commitment.webp",
+  "kind": "req",
+  "what": "도시를 바라보는 사람들",
+  "slide": 9,
+  "box": [
+   720,
+   150,
+   700,
+   560
+  ]
+ },
+ "S13-1": {
+  "file": "public/images/company/vision-hero.webp",
+  "kind": "req",
+  "what": "간·폐·장이 연결된 칩",
+  "slide": 13,
+  "box": [
+   860,
+   300,
+   660,
+   560
+  ]
+ },
+ "S15-1": {
+  "file": "public/images/company/mission-lab.webp",
+  "kind": "req",
+  "what": "칩을 관찰하는 연구자",
+  "slide": 15,
+  "box": [
+   1050,
+   0,
+   340,
+   360
+  ]
+ },
+ "S15-2": {
+  "file": "public/images/company/mission-recreate.webp",
+  "kind": "opt",
+  "what": "원형 이미지 01",
+  "slide": 15,
+  "box": [
+   310,
+   372,
+   212,
+   208
+  ]
+ },
+ "S15-3": {
+  "file": "public/images/company/mission-predict.webp",
+  "kind": "opt",
+  "what": "원형 이미지 02",
+  "slide": 15,
+  "box": [
+   805,
+   372,
+   212,
+   208
+  ]
+ },
+ "S15-4": {
+  "file": "public/images/company/mission-connect.webp",
+  "kind": "opt",
+  "what": "원형 이미지 03",
+  "slide": 15,
+  "box": [
+   1272,
+   372,
+   212,
+   208
+  ]
+ },
+ "S16-1": {
+  "file": "public/images/company/pillars-hero.webp",
+  "kind": "req",
+  "what": "오가노이드 웰 플레이트",
+  "slide": 16,
+  "box": [
+   900,
+   85,
+   440,
+   245
+  ]
+ },
+ "S16-2": {
+  "file": "public/images/company/pillar-models.webp",
+  "kind": "opt",
+  "what": "원형 이미지 01",
+  "slide": 16,
+  "box": [
+   185,
+   335,
+   220,
+   220
+  ]
+ },
+ "S16-3": {
+  "file": "public/images/company/pillar-mps.webp",
+  "kind": "opt",
+  "what": "원형 이미지 02",
+  "slide": 16,
+  "box": [
+   585,
+   335,
+   220,
+   220
+  ]
+ },
+ "S16-4": {
+  "file": "public/images/company/pillar-multi-organ.webp",
+  "kind": "opt",
+  "what": "원형 이미지 03",
+  "slide": 16,
+  "box": [
+   985,
+   335,
+   220,
+   220
+  ]
+ },
+ "S16-5": {
+  "file": "public/images/company/pillar-assays.webp",
+  "kind": "opt",
+  "what": "원형 이미지 04",
+  "slide": 16,
+  "box": [
+   1390,
+   335,
+   215,
+   220
+  ]
+ },
+ "S17-1": {
+  "file": "public/images/company/direction-hero.webp",
+  "kind": "req",
+  "what": "미세유체 칩과 방울",
+  "slide": 17,
+  "box": [
+   870,
+   40,
+   480,
+   380
+  ]
+ },
+ "S17-2": {
+  "file": "public/images/company/direction-model.webp",
+  "kind": "opt",
+  "what": "원형 이미지 01",
+  "slide": 17,
+  "box": [
+   170,
+   460,
+   210,
+   220
+  ]
+ },
+ "S17-3": {
+  "file": "public/images/company/direction-assay.webp",
+  "kind": "opt",
+  "what": "원형 이미지 02",
+  "slide": 17,
+  "box": [
+   575,
+   465,
+   200,
+   215
+  ]
+ },
+ "S17-4": {
+  "file": "public/images/company/direction-data.webp",
+  "kind": "opt",
+  "what": "원형 이미지 03",
+  "slide": 17,
+  "box": [
+   965,
+   445,
+   215,
+   235
+  ]
+ },
+ "S17-5": {
+  "file": "public/images/company/direction-insight.webp",
+  "kind": "opt",
+  "what": "원형 이미지 04",
+  "slide": 17,
+  "box": [
+   1365,
+   445,
+   215,
+   235
+  ]
+ },
+ "S18-1": {
+  "file": "public/images/company/final-human.webp",
+  "kind": "req",
+  "what": "장기와 데이터로 연결된 인체",
+  "slide": 18,
+  "box": [
+   880,
+   70,
+   550,
+   640
+  ]
+ },
+ "S20-1": {
+  "file": "public/images/platform/humimic/motion-chip.webp",
+  "kind": "req",
+  "what": "다장기 칩",
+  "slide": 20,
+  "box": [
+   770,
+   330,
+   890,
+   470
+  ]
+ },
+ "S21-1": {
+  "file": "public/images/platform/humimic/applications.webp",
+  "kind": "req",
+  "what": "피펫과 미세유체 칩 배경",
+  "slide": 21,
+  "box": [
+   820,
+   110,
+   520,
+   380
+  ]
+ },
+ "S22-1": {
+  "file": "public/images/platform/humimic/connected-system.webp",
+  "kind": "req",
+  "what": "장기가 연결된 플랫폼 도식",
+  "slide": 22,
+  "box": [
+   722,
+   300,
+   780,
+   312
+  ]
+ },
+ "S23-1": {
+  "file": "public/images/platform/humimic/chip-hand.webp",
+  "kind": "req",
+  "what": "손에 든 칩",
+  "slide": 23,
+  "box": [
+   850,
+   80,
+   590,
+   330
+  ]
+ },
+ "S24-1": {
+  "file": "public/images/platform/humimic/solutions-chip.webp",
+  "kind": "req",
+  "what": "다장기 칩",
+  "slide": 24,
+  "box": [
+   810,
+   90,
+   560,
+   300
+  ]
+ },
+ "S24-2": {
+  "file": "public/images/assays/lung/card.webp",
+  "kind": "req",
+  "what": "카드 이미지: 폐",
+  "slide": 24,
+  "box": [
+   332,
+   488,
+   232,
+   124
+  ]
+ },
+ "S24-3": {
+  "file": "public/images/assays/multi-organ/card.webp",
+  "kind": "req",
+  "what": "카드 이미지: 다장기",
+  "slide": 24,
+  "box": [
+   1116,
+   488,
+   238,
+   124
+  ]
+ },
+ "S24-4": {
+  "file": "public/images/assays/custom/card.webp",
+  "kind": "req",
+  "what": "카드 이미지: 맞춤형(세포와 피펫)",
+  "slide": 24,
+  "box": [
+   1380,
+   488,
+   238,
+   124
+  ]
+ },
+ "S26-1": {
+  "file": "public/images/platform/mps-technology/s1-hero.webp",
+  "kind": "opt",
+  "what": "칩 메인 비주얼",
+  "slide": 26,
+  "box": [
+   915,
+   10,
+   528,
+   450
+  ]
+ },
+ "S26-2": {
+  "file": "public/images/platform/mps-technology/s1-2d.webp",
+  "kind": "opt",
+  "what": "카드 이미지: 배양 접시",
+  "slide": 26,
+  "box": [
+   100,
+   578,
+   230,
+   122
+  ]
+ },
+ "S26-3": {
+  "file": "public/images/platform/mps-technology/s1-animal.webp",
+  "kind": "opt",
+  "what": "카드 이미지: 실험용 쥐",
+  "slide": 26,
+  "box": [
+   410,
+   578,
+   240,
+   122
+  ]
+ },
+ "S26-4": {
+  "file": "public/images/platform/mps-technology/s1-mps.webp",
+  "kind": "opt",
+  "what": "카드 이미지: MPS 칩 단면",
+  "slide": 26,
+  "box": [
+   975,
+   555,
+   345,
+   145
+  ]
+ },
+ "S27-1": {
+  "file": "public/images/platform/mps-technology/s2-hero.webp",
+  "kind": "req",
+  "what": "인체 장기 일러스트",
+  "slide": 27,
+  "box": [
+   1075,
+   20,
+   250,
+   365
+  ]
+ },
+ "S27-2": {
+  "file": "public/images/platform/mps-technology/s2-2d.webp",
+  "kind": "req",
+  "what": "카드 이미지: 배양 접시",
+  "slide": 27,
+  "box": [
+   110,
+   565,
+   210,
+   110
+  ]
+ },
+ "S27-3": {
+  "file": "public/images/platform/mps-technology/s2-animal.webp",
+  "kind": "req",
+  "what": "카드 이미지: 실험용 쥐",
+  "slide": 27,
+  "box": [
+   410,
+   565,
+   220,
+   120
+  ]
+ },
+ "S28-1": {
+  "file": "public/images/platform/mps-technology/s3-hero.webp",
+  "kind": "opt",
+  "what": "칩 메인 비주얼",
+  "slide": 28,
+  "box": [
+   815,
+   80,
+   640,
+   350
+  ]
+ },
+ "S28-2": {
+  "file": "public/images/platform/mps-technology/s3-cells.webp",
+  "kind": "opt",
+  "what": "카드 이미지 01",
+  "slide": 28,
+  "box": [
+   64,
+   545,
+   232,
+   120
+  ]
+ },
+ "S28-3": {
+  "file": "public/images/platform/mps-technology/s3-tissue.webp",
+  "kind": "opt",
+  "what": "카드 이미지 02",
+  "slide": 28,
+  "box": [
+   328,
+   545,
+   228,
+   120
+  ]
+ },
+ "S28-4": {
+  "file": "public/images/platform/mps-technology/s3-microfluidics.webp",
+  "kind": "opt",
+  "what": "카드 이미지 03",
+  "slide": 28,
+  "box": [
+   583,
+   545,
+   240,
+   120
+  ]
+ },
+ "S28-5": {
+  "file": "public/images/platform/mps-technology/s3-dynamic.webp",
+  "kind": "opt",
+  "what": "카드 이미지 04",
+  "slide": 28,
+  "box": [
+   840,
+   545,
+   240,
+   120
+  ]
+ },
+ "S28-6": {
+  "file": "public/images/platform/mps-technology/s3-multi-organ.webp",
+  "kind": "opt",
+  "what": "카드 이미지 05",
+  "slide": 28,
+  "box": [
+   1107,
+   545,
+   245,
+   120
+  ]
+ },
+ "S28-7": {
+  "file": "public/images/platform/mps-technology/s3-analysis.webp",
+  "kind": "opt",
+  "what": "카드 이미지 06 (분석 화면)",
+  "slide": 28,
+  "box": [
+   1395,
+   550,
+   220,
+   115
+  ]
+ },
+ "S29-1": {
+  "file": "public/images/platform/mps-technology/s4-hero.webp",
+  "kind": "opt",
+  "what": "칩 메인 비주얼",
+  "slide": 29,
+  "box": [
+   880,
+   70,
+   560,
+   380
+  ]
+ },
+ "S29-2": {
+  "file": "public/images/platform/mps-technology/s4-perfusion.webp",
+  "kind": "opt",
+  "what": "카드 이미지 01",
+  "slide": 29,
+  "box": [
+   65,
+   530,
+   285,
+   150
+  ]
+ },
+ "S29-3": {
+  "file": "public/images/platform/mps-technology/s4-mechanical.webp",
+  "kind": "opt",
+  "what": "카드 이미지 02",
+  "slide": 29,
+  "box": [
+   382,
+   530,
+   285,
+   150
+  ]
+ },
+ "S29-4": {
+  "file": "public/images/platform/mps-technology/s4-multi-param.webp",
+  "kind": "opt",
+  "what": "카드 이미지 03",
+  "slide": 29,
+  "box": [
+   698,
+   530,
+   212,
+   150
+  ]
+ },
+ "S30-1": {
+  "file": "public/images/platform/mps-technology/s5-hero.webp",
+  "kind": "opt",
+  "what": "인체와 다장기 칩",
+  "slide": 30,
+  "box": [
+   720,
+   80,
+   330,
+   360
+  ]
+ },
+ "S30-2": {
+  "file": "public/images/platform/mps-technology/s5-microfluidic.webp",
+  "kind": "opt",
+  "what": "카드 이미지 02",
+  "slide": 30,
+  "box": [
+   422,
+   522,
+   282,
+   160
+  ]
+ },
+ "S30-3": {
+  "file": "public/images/platform/mps-technology/s5-systemic.webp",
+  "kind": "opt",
+  "what": "카드 이미지 03",
+  "slide": 30,
+  "box": [
+   745,
+   522,
+   280,
+   160
+  ]
+ },
+ "S30-4": {
+  "file": "public/images/platform/mps-technology/s5-insight.webp",
+  "kind": "opt",
+  "what": "카드 이미지 04 (대시보드)",
+  "slide": 30,
+  "box": [
+   1066,
+   522,
+   280,
+   160
+  ]
+ },
+ "S31-1": {
+  "file": "public/images/platform/mps-technology/s6-ai.webp",
+  "kind": "req",
+  "what": "카드 이미지: AI 칩",
+  "slide": 31,
+  "box": [
+   420,
+   518,
+   178,
+   165
+  ]
+ },
+ "S31-2": {
+  "file": "public/images/platform/mps-technology/s6-hero.webp",
+  "kind": "opt",
+  "what": "분석 모니터",
+  "slide": 31,
+  "box": [
+   910,
+   25,
+   470,
+   405
+  ]
+ },
+ "S31-3": {
+  "file": "public/images/platform/mps-technology/s6-multimodal.webp",
+  "kind": "opt",
+  "what": "카드 이미지: 데이터 레이어",
+  "slide": 31,
+  "box": [
+   65,
+   510,
+   320,
+   170
+  ]
+ },
+ "S31-4": {
+  "file": "public/images/platform/mps-technology/s6-insight.webp",
+  "kind": "opt",
+  "what": "카드 이미지: 대조군·처리군",
+  "slide": 31,
+  "box": [
+   768,
+   518,
+   278,
+   165
+  ]
+ },
+ "S31-5": {
+  "file": "public/images/platform/mps-technology/s6-report.webp",
+  "kind": "opt",
+  "what": "카드 이미지: 리포트",
+  "slide": 31,
+  "box": [
+   1085,
+   518,
+   265,
+   165
+  ]
+ },
+ "S32-1": {
+  "file": "public/images/platform/mps-technology/s7-society.webp",
+  "kind": "req",
+  "what": "카드 이미지: 아이",
+  "slide": 32,
+  "box": [
+   1072,
+   528,
+   150,
+   152
+  ]
+ },
+ "S32-2": {
+  "file": "public/images/platform/mps-technology/s7-personalized.webp",
+  "kind": "opt",
+  "what": "카드 이미지: 장기별 레이어",
+  "slide": 32,
+  "box": [
+   745,
+   528,
+   295,
+   152
+  ]
+ },
+ "S34-1": {
+  "file": "public/images/platform/workflow/overview.webp",
+  "kind": "req",
+  "what": "칩 속 오가노이드 배경",
+  "slide": 34,
+  "box": [
+   900,
+   560,
+   772,
+   381
+  ]
+ },
+ "S35-1": {
+  "file": "public/images/platform/workflow/design-chip.webp",
+  "kind": "opt",
+  "what": "4개 조직이 배양된 칩",
+  "slide": 35,
+  "box": [
+   1160,
+   345,
+   512,
+   370
+  ]
+ },
+ "S36-1": {
+  "file": "public/images/platform/workflow/experiment-chip.webp",
+  "kind": "opt",
+  "what": "피펫과 칩",
+  "slide": 36,
+  "box": [
+   720,
+   205,
+   720,
+   300
+  ]
+ },
+ "S40-1": {
+  "file": "public/images/assays/liver/hero.webp",
+  "kind": "req",
+  "what": "간과 MPS 칩",
+  "slide": 40,
+  "box": [
+   800,
+   200,
+   458,
+   700
+  ]
+ },
+ "S41-1": {
+  "file": "public/images/assays/liver/why.webp",
+  "kind": "req",
+  "what": "인체 속 간",
+  "slide": 41,
+  "box": [
+   940,
+   160,
+   520,
+   400
+  ]
+ },
+ "S42-1": {
+  "file": "public/images/assays/liver/solution.webp",
+  "kind": "req",
+  "what": "칩 위의 간",
+  "slide": 42,
+  "box": [
+   760,
+   162,
+   700,
+   368
+  ]
+ },
+ "S42-2": {
+  "file": "public/images/assays/liver/step-model.webp",
+  "kind": "opt",
+  "what": "원형 이미지 01",
+  "slide": 42,
+  "box": [
+   65,
+   527,
+   135,
+   135
+  ]
+ },
+ "S42-3": {
+  "file": "public/images/assays/liver/step-culture.webp",
+  "kind": "opt",
+  "what": "원형 이미지 02",
+  "slide": 42,
+  "box": [
+   500,
+   527,
+   140,
+   135
+  ]
+ },
+ "S42-4": {
+  "file": "public/images/assays/liver/step-exposure.webp",
+  "kind": "opt",
+  "what": "원형 이미지 03",
+  "slide": 42,
+  "box": [
+   900,
+   527,
+   135,
+   135
+  ]
+ },
+ "S42-5": {
+  "file": "public/images/assays/liver/step-readout.webp",
+  "kind": "opt",
+  "what": "원형 이미지 04 (모니터)",
+  "slide": 42,
+  "box": [
+   1270,
+   527,
+   140,
+   135
+  ]
+ },
+ "S43-1": {
+  "file": "public/images/assays/liver/deliverables.webp",
+  "kind": "req",
+  "what": "간과 칩, 데이터 패널",
+  "slide": 43,
+  "box": [
+   760,
+   140,
+   540,
+   380
+  ]
+ },
+ "S45-1": {
+  "file": "public/images/assays/bone-marrow/hero.webp",
+  "kind": "req",
+  "what": "골수 조직 칩",
+  "slide": 45,
+  "box": [
+   900,
+   360,
+   772,
+   581
+  ]
+ },
+ "S46-1": {
+  "file": "public/images/assays/bone-marrow/why.webp",
+  "kind": "req",
+  "what": "골수 미세환경",
+  "slide": 46,
+  "box": [
+   912,
+   360,
+   596,
+   581
+  ]
+ }
+}

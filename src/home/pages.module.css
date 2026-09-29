@@ -1,0 +1,9 @@
+.spacer {
+  height: var(--space-5);
+}
+
+.commitment {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-5);
+}
