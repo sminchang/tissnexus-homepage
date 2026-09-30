@@ -42,6 +42,10 @@ export interface CardContent {
   body?: string;
   bullets?: string[];
   tag?: string;
+  /** contain: 이미지를 자르지 않고 칸 안에 줄여 넣음 (원본이 작은 이미지용) */
+  imageFit?: "contain";
+  /** 그리드 한 줄을 넓게 쓰는 카드: 수치를 왼쪽, 목록을 오른쪽에 둡니다 */
+  wide?: boolean;
 }
 
 export interface SectionContent {
@@ -94,24 +98,23 @@ const ko: MpsContent = {
           title: "2D 세포 배양",
           subtitle: "너무 단순합니다.",
           image: { src: src("s1-2d"), alt: "2D 세포 배양 접시" },
+          imageFit: "contain",
           bullets: ["단순한 세포 배양 환경", "제한된 세포 간 상호작용", "인체와 다른 반응"],
+          tag: "단순하지만, 충분하지 않습니다.",
         },
         {
           title: "동물 모델",
           subtitle: "생물학이 다릅니다.",
           image: { src: src("s1-animal"), alt: "실험용 쥐" },
+          imageFit: "contain",
           bullets: ["종 간 생물학적 차이", "인체와 다른 약물 반응", "높은 비용과 긴 개발 기간"],
-        },
-        {
-          title: "임상 전환의 간극",
-          subtitle: "좋은 후보물질도 임상에서 실패하는 이유",
-          figure: "failure90",
-          body: "전임상과 임상의 불일치로 인한 실패",
+          tag: "유용하지만, 예측적이지 않습니다.",
         },
         {
           title: "MPS 기술",
           subtitle: "인간 중심의 해법.",
           image: { src: src("s1-mps"), alt: "MPS 칩 속 조직 단면" },
+          imageFit: "contain",
           bullets: [
             "인간 유래 세포와 3차원 조직 구조",
             "동적인 생리환경(미세유체, 전단응력 등)",
@@ -148,25 +151,11 @@ const ko: MpsContent = {
         "TissNexus는 이 간극(Translation Gap)을 줄이기 위해 Human-Relevant MPS 기술을 개발합니다.",
       ],
       image: { src: src("s2-hero"), alt: "인체 장기 일러스트" },
-      groupLabel: "기존 연구모델의 한계",
       cards: [
         {
-          title: "2D 세포 배양",
-          subtitle: "너무 단순한 모델",
-          image: { src: src("s2-2d"), alt: "2D 세포 배양 접시" },
-          bullets: ["단일 세포, 2차원 배양", "제한된 세포 간 상호작용", "복잡한 생리 환경 반영 불가"],
-          tag: "단순하지만, 충분하지 않습니다.",
-        },
-        {
-          title: "동물 모델",
-          subtitle: "종 차이에 따른 한계",
-          image: { src: src("s2-animal"), alt: "실험용 쥐" },
-          bullets: ["인간과 다른 생물학적 반응", "예측하기 어려운 약물 대사", "높은 비용과 긴 개발 기간"],
-          tag: "유용하지만, 예측적이지 않습니다.",
-        },
-        {
-          title: "결과",
-          subtitle: "임상에서 실패하는 이유",
+          wide: true,
+          title: "임상 전환의 간극",
+          subtitle: "좋은 후보물질도 임상에서 실패하는 이유",
           figure: "failure90",
           bullets: ["비임상과 임상의 불일치", "예측하지 못한 독성 발생", "효능 부족으로 인한 개발 중단"],
           tag: "높은 탈락률, 높은 비용, 놓친 기회.",
@@ -527,24 +516,23 @@ const en: MpsContent = {
           title: "2D Cell Culture",
           subtitle: "Too Simple.",
           image: { src: src("s1-2d"), alt: "2D cell culture dish" },
+          imageFit: "contain",
           bullets: ["Oversimplified culture environment", "Limited cell–cell interaction", "Responses unlike the human body"],
+          tag: "Simple. But Not Enough.",
         },
         {
           title: "Animal Model",
           subtitle: "Different Biology.",
           image: { src: src("s1-animal"), alt: "Laboratory mouse" },
+          imageFit: "contain",
           bullets: ["Biological differences between species", "Drug responses unlike humans", "High cost and long timelines"],
-        },
-        {
-          title: "The Translation Gap",
-          subtitle: "Why good candidates still fail in the clinic",
-          figure: "failure90",
-          body: "Failure driven by the preclinical–clinical mismatch",
+          tag: "Useful. But Not Predictive.",
         },
         {
           title: "MPS Technology",
           subtitle: "A Human-Relevant Solution.",
           image: { src: src("s1-mps"), alt: "Cross-section of tissue inside an MPS chip" },
+          imageFit: "contain",
           bullets: [
             "Human-derived cells in 3D tissue structures",
             "Dynamic physiology (microfluidics, shear stress)",
@@ -581,25 +569,11 @@ const en: MpsContent = {
         "TissNexus develops Human-Relevant MPS technology to close this Translation Gap.",
       ],
       image: { src: src("s2-hero"), alt: "Human organ illustration" },
-      groupLabel: "Limitations of Traditional Models",
       cards: [
         {
-          title: "2D Cell Culture",
-          subtitle: "Too simple a model",
-          image: { src: src("s2-2d"), alt: "2D cell culture dish" },
-          bullets: ["Single cell type, 2D culture", "Limited cell–cell interaction", "Cannot reflect complex physiology"],
-          tag: "Simple. But Not Enough.",
-        },
-        {
-          title: "Animal Model",
-          subtitle: "Limited by species differences",
-          image: { src: src("s2-animal"), alt: "Laboratory mouse" },
-          bullets: ["Biological responses unlike humans", "Hard-to-predict drug metabolism", "High cost and long timelines"],
-          tag: "Useful. But Not Predictive.",
-        },
-        {
-          title: "The Result",
-          subtitle: "Why candidates fail in the clinic",
+          wide: true,
+          title: "The Translation Gap",
+          subtitle: "Why good candidates still fail in the clinic",
           figure: "failure90",
           bullets: ["Preclinical–clinical mismatch", "Unexpected toxicity", "Development halted for lack of efficacy"],
           tag: "High Attrition. High Cost. Missed Opportunities.",

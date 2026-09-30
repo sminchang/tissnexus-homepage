@@ -7,11 +7,14 @@ export interface MediaCard {
   title: string;
   subtitle?: string;
   image?: ImageRef;
+  imageFit?: "contain";
   /** 이미지 대신 들어가는 차트·수치 등 임의 요소 */
   media?: ReactNode;
   body?: string;
   bullets?: string[];
   tag?: string;
+  /** 수치(media)를 왼쪽, 목록을 오른쪽에 두는 넓은 카드 */
+  wide?: boolean;
 }
 
 interface MediaCardGridProps {
@@ -29,7 +32,7 @@ export function MediaCardGrid({ cards, aside }: MediaCardGridProps) {
     <div className={styles.row} data-has-aside={Boolean(aside)}>
       <ul className={styles.grid} style={{ "--cols": cards.length } as CSSProperties}>
         {cards.map((card) => (
-          <li key={card.title} className={styles.card}>
+          <li key={card.title} className={styles.card} data-wide={card.wide || undefined}>
             <div className={styles.head}>
               {card.num && <span className={styles.num}>{card.num}</span>}
               <div>
@@ -38,7 +41,7 @@ export function MediaCardGrid({ cards, aside }: MediaCardGridProps) {
               </div>
             </div>
             {card.image && (
-              <div className={styles.image}>
+              <div className={styles.image} data-fit={card.imageFit}>
                 <img src={card.image.src} alt={card.image.alt} loading="lazy" />
               </div>
             )}

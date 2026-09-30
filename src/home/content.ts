@@ -40,6 +40,7 @@ const ko = {
     eyebrow: "우리가 해결하는 간극",
     title: "실험실과 인간 생물학 사이의\n*간극을 잇습니다*",
     lead: "기존 연구모델과 실제 인간 생체반응 사이의 간극을\nHuman-Relevant MPS를 통해 줄입니다.",
+    image: { src: src("gap-bg"), alt: "미세유체 채널 속 오가노이드" },
     diagram: {
       traditionalLabel: "기존 연구모델",
       traditional: [
@@ -180,6 +181,7 @@ const en: typeof ko = {
     eyebrow: "The Gap We Solve",
     title: "Bridging the Gap Between\n*Laboratory and Human Biology*",
     lead: "We narrow the gap between conventional research models\nand real human responses with Human-Relevant MPS.",
+    image: { src: src("gap-bg"), alt: "Organoids in a microfluidic channel" },
     diagram: {
       traditionalLabel: "Traditional Models",
       traditional: [

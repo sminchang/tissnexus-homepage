@@ -22,7 +22,7 @@ export function HomePage() {
 
       <Hero eyebrow={{ index: "02", label: whoWeAre.eyebrow }} title={whoWeAre.title} body={whoWeAre.body} image={whoWeAre.image} />
 
-      <Hero eyebrow={{ index: "03", label: gap.eyebrow }} title={gap.title} lead={gap.lead}>
+      <Hero eyebrow={{ index: "03", label: gap.eyebrow }} title={gap.title} lead={gap.lead} image={gap.image}>
         <GapDiagram {...gap.diagram} />
       </Hero>
 

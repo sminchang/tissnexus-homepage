@@ -85,8 +85,7 @@ export function OrganGrid({ organs }: { organs: ImageRef[] }) {
     <ul className={styles.organs}>
       {organs.map((o) => (
         <li key={o.src}>
-          <img src={o.src} alt="" loading="lazy" />
-          <span>{o.alt}</span>
+          <img src={o.src} alt={o.alt} loading="lazy" />
         </li>
       ))}
     </ul>

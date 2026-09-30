@@ -53,8 +53,22 @@
   mask-image: none;
 }
 
+.media[data-fit="contain"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 배경이 깔린 도식 이미지도 사각형 테두리가 드러나지 않도록 이미지 가장자리만 흐립니다.
+   이미지 상자를 그림 크기에 딱 맞춰야 흐림이 그림 가장자리에 걸립니다. */
 .media[data-fit="contain"] img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
   object-fit: contain;
+  -webkit-mask-image: radial-gradient(ellipse 70% 70% at center, #000 55%, transparent 100%);
+  mask-image: radial-gradient(ellipse 70% 70% at center, #000 55%, transparent 100%);
 }
 
 .inner {

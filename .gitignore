@@ -10,3 +10,7 @@ dist-single
 # 시안 원본(대용량)과 윈도우 다운로드 부가 파일
 docs/*.pptx
 *:Zone.Identifier
+
+# 받은 이미지 원본(대용량). 사이트에는 public/images 에 변환본만 넣습니다
+docs/images/
+docs/어세이-이미지-보정/

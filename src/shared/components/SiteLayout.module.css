@@ -255,3 +255,7 @@
     justify-content: center;
   }
 }
+
+.footerBrand p:lang(ko) {
+  letter-spacing: 0.08em;
+}

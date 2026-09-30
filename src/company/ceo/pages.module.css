@@ -58,7 +58,7 @@
 .portrait {
   justify-self: center;
   width: min(100%, 440px);
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 4 / 5; /* 대표 사진 원본 비율(804×1024) */
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 24px 60px rgba(19, 60, 130, 0.18);

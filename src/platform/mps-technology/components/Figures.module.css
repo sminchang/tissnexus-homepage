@@ -168,17 +168,6 @@
   object-fit: cover;
 }
 
-.organs span {
-  position: absolute;
-  inset: auto 0 0;
-  padding: 1px 0;
-  background: rgba(255, 255, 255, 0.82);
-  font-size: 10.5px;
-  font-weight: 700;
-  text-align: center;
-  color: var(--color-text);
-}
-
 /* ── 개발 기간 비교 ── */
 .timeline {
   height: var(--media-h);

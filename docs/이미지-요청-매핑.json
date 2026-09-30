@@ -453,7 +453,8 @@
    10,
    528,
    450
-  ]
+  ],
+  "note": "HUMIMIC 글자를 지운 자리가 번져 있어 쓰지 않음. 새로 생성 필요"
  },
  "S26-2": {
   "file": "public/images/platform/mps-technology/s1-2d.webp",
@@ -465,7 +466,8 @@
    578,
    230,
    122
-  ]
+  ],
+  "note": "받은 이미지가 기존 이미지를 키운 것이라 더 흐려서 쓰지 않음. 새로 생성 필요"
  },
  "S26-3": {
   "file": "public/images/platform/mps-technology/s1-animal.webp",
@@ -477,7 +479,8 @@
    578,
    240,
    122
-  ]
+  ],
+  "note": "받은 이미지가 기존 이미지를 키운 것이라 더 흐려서 쓰지 않음. 새로 생성 필요"
  },
  "S26-4": {
   "file": "public/images/platform/mps-technology/s1-mps.webp",
@@ -505,7 +508,7 @@
  },
  "S27-2": {
   "file": "public/images/platform/mps-technology/s2-2d.webp",
-  "kind": "req",
+  "kind": "dropped",
   "what": "카드 이미지: 배양 접시",
   "slide": 27,
   "box": [
@@ -513,11 +516,12 @@
    565,
    210,
    110
-  ]
+  ],
+  "note": "MPS 기술 2번 섹션 중복 정리로 더 이상 쓰지 않음"
  },
  "S27-3": {
   "file": "public/images/platform/mps-technology/s2-animal.webp",
-  "kind": "req",
+  "kind": "dropped",
   "what": "카드 이미지: 실험용 쥐",
   "slide": 27,
   "box": [
@@ -525,7 +529,8 @@
    565,
    220,
    120
-  ]
+  ],
+  "note": "MPS 기술 2번 섹션 중복 정리로 더 이상 쓰지 않음"
  },
  "S28-1": {
   "file": "public/images/platform/mps-technology/s3-hero.webp",
@@ -801,7 +806,8 @@
    560,
    772,
    381
-  ]
+  ],
+  "note": "받은 이미지가 흐려서 쓰지 않음(워크플로 1번은 S04-1로 대체). 새로 생성 필요"
  },
  "S35-1": {
   "file": "public/images/platform/workflow/design-chip.webp",
@@ -861,7 +867,8 @@
    162,
    700,
    368
-  ]
+  ],
+  "note": "받은 이미지가 예전보다 색이 빠지고 흐려서 쓰지 않음. 새로 생성 필요"
  },
  "S42-2": {
   "file": "public/images/assays/liver/step-model.webp",
@@ -946,5 +953,18 @@
    596,
    581
   ]
+ },
+ "S05-1": {
+  "file": "public/images/home/gap-bg.webp",
+  "kind": "req",
+  "what": "회사 개요 3번 섹션 전체 배경 (오가노이드 채널)",
+  "slide": 5,
+  "box": [
+   0,
+   560,
+   900,
+   381
+  ],
+  "note": "처음 요청 목록에서 누락. 지금은 S03-1의 오가노이드 부분을 임시로 사용"
  }
 }
