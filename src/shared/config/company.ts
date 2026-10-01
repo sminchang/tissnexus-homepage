@@ -82,7 +82,7 @@ export const siteMap: Localized<NavGroup[]> = {
       ],
     },
     {
-      label: "플랫폼",
+      label: "기술",
       to: "/platform/humimic",
       match: "/platform",
       children: [
@@ -126,7 +126,7 @@ export const siteMap: Localized<NavGroup[]> = {
       ],
     },
     {
-      label: "Platform",
+      label: "Technology",
       to: "/platform/humimic",
       match: "/platform",
       children: [
